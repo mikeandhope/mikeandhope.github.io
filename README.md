@@ -1,2 +1,2 @@
 # mikeandhope.github.io
-Mike and Hope's Webist
+Mike and Hope's Website
