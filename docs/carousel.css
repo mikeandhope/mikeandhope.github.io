@@ -1,0 +1,129 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto;
+}
+
+.carousel-item img {
+    object-fit: cover; /* Ensures the image covers the entire slide area */
+    width: 100%; /* Full width */
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 1000px){
+  .carousel-caption h1 {
+    font-size: 8rem;
+    color: rgb(230, 88, 60); /* Adjust text color to contrast with the background */
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+    position: relative;
+    /* font-family: 'Qwitcher Grypen', cursive; */
+    font-family: "WindSong", serif;
+    font-weight: 500;
+  }
+  .carousel-caption h2 {
+    font-size: 3.5rem;
+    font-family: 'Garamond', serif;
+  }
+
+  .carousel-caption h3{
+    font-size: 2.5rem;
+    font-family: 'Garamond', serif;
+  }
+  .carousel-caption p {
+    font-size: 1.5rem;
+    font-family: 'Garamond', serif;
+    padding-bottom: 1.5rem;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1000px){
+  .carousel-caption {
+    top: 5%;
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+    color: rgb(230, 88, 60); /* Adjust text color to contrast with the background */
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+    position: relative;
+    /* font-family: 'Qwitcher Grypen', cursive; */
+    font-family: "WindSong", serif;
+    font-weight: 500;
+  }
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+    font-family: 'Garamond', serif;
+  }
+
+  .carousel-caption h3{
+    font-size: 1.5rem;
+    font-family: 'Garamond', serif;
+  }
+  .carousel-caption p {
+    font-size: 1.25rem;
+    font-family: 'Garamond', serif;
+  }
+  .featurette-heading {
+    font-size: 50px;
+    margin-top: 7rem;
+  }
+}
+
+
+.btn-custom {
+  background-color: rgb(230, 88, 60);
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
