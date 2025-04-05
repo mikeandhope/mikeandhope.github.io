@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hope & Mike's Wedding Details">
+    <link rel="icon" href="/assets/icons8-wedding-96.png" type="image/png">
+    <title>Mike + Hope ❤️</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      .btn-custom {
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        margin: 0.5rem;
+      }
+      .btn-custom:hover {
+        background-color: #e85a4f;
+      }
+      .btn-block-mobile {
+        width: auto;
+      }
+      .carousel-item {
+        height: 100vh;
+        min-height: 500px;
+        background: no-repeat center center scroll;
+        background-size: cover;
+      }
+      .overlay-container {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+      }
+      #heroCarousel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+      }
+      .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        padding-top: 100px;
+        padding-bottom: 4rem;
+      }
+      .content-section {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+      }
+      .accordion-item {
+        background: transparent;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        border: none;
+      }
+      .accordion-button {
+        background-color: #ff6f61;
+        color: white;
+        font-weight: bold;
+        border: none;
+        box-shadow: none;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #e85a4f;
+        color: white;
+        box-shadow: none;
+      }
+      .accordion-body {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+      .list-group-item {
+        background-color: transparent;
+        color: white;
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+      .hero-title {
+        font-family: 'WindSong', cursive;
+        font-size: 7rem;
+        text-align: center;
+        color: #ff6f61;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 4rem;
+          padding-top: 8vh;
+          padding-bottom: 4vh;
+        }
+        .overlay-content {
+          padding-bottom: 6rem;
+        }
+        .content-section {
+          padding: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .btn-block-mobile {
+          display: block;
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <div class="overlay-container">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-22.jpg');"></div>
+                <div class="carousel-item h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-110.jpg');"></div>
+                <div class="carousel-item h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-107.jpg');"></div>
+                <div class="carousel-item h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-92.jpg');"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+    
+            <div class="overlay-content">
+          <h1 class="hero-title">Mike & Hope</h1>
+          <div class="container content-section text-center">
+            <h1 class="display-4">Welcome, friends and family!</h1>
+            <p class="lead">We’re so excited to be tying the knot and can’t wait to celebrate this special moment with the people we love most—you!</p>
+            <p>Our wedding will be a Sunday garden party filled with laughter, flowers, and brunch. After the ceremony, stick around for delicious bites, joyful toasts, and of course, cake and ice cream in a gorgeous venue.</p>
+            <p>We truly hope you can join us as we start this next chapter together. Your presence would mean the world to us.</p>
+            <p><strong>With love,</strong><br>Hope & Mike</p>
+          </div>
+
+          <div class="container content-section">
+            <h2 class="text-center mb-4">Wedding Day Details</h2>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item"><strong>Date:</strong> Sunday, June 1st, 2025</li>
+              <li class="list-group-item"><strong>Service Time:</strong> 1:00 PM</li>
+              <li class="list-group-item"><strong>Brunch Reception:</strong> Immediately following the ceremony</li>
+              <li class="list-group-item"><strong>Coffee Cart:</strong> Come early for specialty lattes!</li>
+              <li class="list-group-item"><strong>Parking:</strong> Valet provided or street parking available</li>
+              <li class="list-group-item"><strong>Location:</strong> The Palomar, 2622 Gilbert Ave, Cincinnati, OH 45206</li>
+              <li class="list-group-item"><strong>Please RSVP by:</strong> May 1st</li>
+            </ul>
+            <div class="text-center">
+              <a class="btn btn-lg btn-custom" target="_blank" href="https://forms.gle/your-rsvp-form-link">RSVP Here</a>
+              <a class="btn btn-lg btn-custom" target="_blank" href="https://withjoy.com/hope-and-mike/registry">View Our Registry</a>
+              <a class="btn btn-lg btn-custom" target="_blank" href="https://clients.birdandrosephoto.com/G7x0Eaq7MIH4F">Engagement Photos</a>
+            </div>
+          </div>
+
+          <div class="container content-section">
+            <h2 class="text-center mb-4">FAQs</h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What’s the schedule for the 1st?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    The service starts at 1pm. There will be an outdoor cocktail time under a tent followed by brunch starting at 2pm.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What time should I arrive to ensure I get a latte pre-service?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    If you get to The Palomar by 12:15pm, that should be plenty of time. There’s a lovely outdoor garden area to explore before the service. The coffee truck will also be available during cocktail hour and the reception.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What’s the dress code?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Garden party attire. Somewhat dressy, but no need for black tie formal.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Where should I stay?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    If you're traveling from out of town, we recommend looking at rentals or hotels in Over-the-Rhine, Hyde Park, Oakley, Newport, or Covington.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
