@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hope & Mike's Wedding RSVP">
+    <link rel="icon" href="/assets/icons8-wedding-96.png" type="image/png">
+    <title>RSVP | Mike + Hope ❤️</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Garamond&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body, label, input, select, textarea, .form-label, .form-control, option {
+        color: white !important;
+      }
+      .form-control, .form-select, textarea {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid #ccc;
+      }
+      .btn-custom {
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        margin: 0.5rem 0;
+      }
+      .btn-custom:hover {
+        background-color: #e85a4f;
+      }
+html, body {
+        font-family: 'Garamond', serif;
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: auto;
+      }
+      .carousel-item {
+        height: 100vh;
+        min-height: 500px;
+        background: no-repeat center center scroll;
+        background-size: cover;
+      }
+      #heroCarousel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        z-index: 1055;
+      }
+      .overlay-content {
+        position: relative;
+        max-width: 90%;
+        margin: 0 auto;
+        width: 100%;
+        color: white;
+        z-index: 10;
+        padding-top: 100px;
+        padding-bottom: 4rem;
+      }
+      .content-section {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+      }
+      .hero-title {
+        font-family: 'WindSong', cursive;
+        font-size: 7rem;
+        text-align: center;
+        color: #ff6f61;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        margin: 0;
+      }
+      label, input, select, textarea {
+        color: white !important;
+      }
+    input:focus, textarea:focus, select:focus {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: white !important;
+        border-color: #ccc;
+        box-shadow: none;
+      }
+    option {
+        background-color: #000; 
+        color: white;
+      }
+
+      input:focus, textarea:focus, select:focus {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: white !important;
+        border-color: #ccc;
+        box-shadow: none;
+      }
+      
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 4rem;
+          padding-top: 8vh;
+          padding-bottom: 4vh;
+        }
+        .overlay-content {
+          padding-bottom: 6rem;
+        }
+        .content-section {
+          padding: 1rem;
+          margin-bottom: 1.5rem;
+        }
+        .btn-block-mobile {
+          display: block;
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-22.jpg');"></div>
+          <div class="carousel-item h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-110.jpg');"></div>
+          <div class="carousel-item h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-107.jpg');"></div>
+          <div class="carousel-item h-100" style="background-image: url('/photos/HopeandMikeEngagementSession-92.jpg');"></div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next position-absolute top-50 end-0 translate-middle-y" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="overlay-content">
+        <h1 class="hero-title">Mike & Hope</h1>
+        <div class="container content-section">
+          <h2 class="text-center">RSVP</h2>
+          <form id="rsvpForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="attending" class="form-label">How many people are attending in your party?</label>
+              <select class="form-select" id="attending" required>
+                <option value="">Select</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <div id="sorryMessage" class="text-white mt-2" style="display:none;">We're sorry you can't attend, but we understand ❤️</div>
+            </div>
+            <div id="guestNames"></div>
+            <div class="mb-3">
+              <label for="dietary" class="form-label">Any dietary restrictions?</label>
+              <textarea class="form-control" id="dietary" rows="2"></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" id="funQuestionLabel"></label>
+              <input type="text" class="form-control" id="funAnswer">
+            </div>
+            <button type="submit" class="btn btn-custom">Submit RSVP</button>
+          </form>
+        </div>
+      </div>
+      <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-light">
+            <div class="modal-header">
+            <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+            </div>
+            <div class="modal-body">
+            Thank you for RSVPing! We can't wait to celebrate with you.
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-custom" id="closeModalBtn">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+    </main>
+
+    <script>
+      const funQuestions = [
+        "Any song request for the string quartet?",
+        "Any advice for Hope and Mike?",
+      ];
+
+      document.getElementById("funQuestionLabel").textContent = funQuestions[Math.floor(Math.random() * funQuestions.length)];
+
+      const attendingSelect = document.getElementById("attending");
+      const guestNamesContainer = document.getElementById("guestNames");
+      const sorryMessage = document.getElementById("sorryMessage");
+
+      attendingSelect.addEventListener("change", () => {
+        const count = parseInt(attendingSelect.value);
+        guestNamesContainer.innerHTML = "";
+        sorryMessage.style.display = count === 0 ? "block" : "none";
+
+        for (let i = 1; i <= count; i++) {
+          const div = document.createElement("div");
+          div.classList.add("mb-3");
+          div.innerHTML = `<label class="form-label">Guest ${i} Full Name</label><input type="text" class="form-control" required>`;
+          guestNamesContainer.appendChild(div);
+        }
+      });
+
+      document.getElementById("rsvpForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const form = e.target;
+
+        const formData = new FormData();
+        formData.append("name", document.getElementById("name").value);
+        formData.append("email", document.getElementById("email").value);
+        formData.append("attending", document.getElementById("attending").value);
+        formData.append("dietary", document.getElementById("dietary").value);
+        formData.append("funAnswer", document.getElementById("funAnswer").value);
+        formData.append("funQuestion", document.getElementById("funQuestionLabel").textContent);
+
+        const guestInputs = document.querySelectorAll('#guestNames input');
+        guestInputs.forEach((input, i) => {
+            formData.append(`guest${i + 1}`, input.value);
+        });
+
+        try {
+            const submitBtn = document.querySelector(".btn-custom");
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Submitting...";
+
+            await fetch("https://script.google.com/macros/s/AKfycbyDzW_N1i8A1rJfXkNrTLh2wyjPEaVg9f3w1WOo0CZZFYneDK8-2JVvWCLhVOf2CqIs/exec", {
+            method: "POST",
+            body: formData
+            // No headers — avoids triggering CORS preflight!
+            });
+            // Show the custom modal
+            const modal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            modal.show();
+
+            document.getElementById("closeModalBtn").addEventListener("click", () => {
+                window.location.href = "/index.html";
+  });
+        } catch (error) {
+            alert("There was an error submitting the form. Please try again later.");
+            console.error("RSVP submission error:", error);
+        }
+        });
+ 
+
+
+    </script>
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
